@@ -16,7 +16,7 @@ class CreateDeparturesDateTable extends Migration
         Schema::create('departures_date', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->date("departures_date");
+            $table->dateTime("departures_date");
         });
     }
 

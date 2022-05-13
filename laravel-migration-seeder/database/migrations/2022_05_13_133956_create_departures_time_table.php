@@ -15,7 +15,7 @@ class CreateDeparturesTimeTable extends Migration
     {
         Schema::create('departures_time', function (Blueprint $table) {
             $table->id();
-            $table->time("departures_time");
+            $table->dateTime("departures_time");
         });
     }
 

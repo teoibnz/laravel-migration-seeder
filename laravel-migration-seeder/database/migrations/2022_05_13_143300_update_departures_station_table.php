@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateArrivalsTimeTable extends Migration
+class UpdateDeparturesStationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateArrivalsTimeTable extends Migration
      */
     public function up()
     {
-        Schema::create('arrivals_time', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->dateTime("arrivals_time");
-
+        Schema::table('departures_station', function (Blueprint $table) {
+            //
         });
     }
 
@@ -28,6 +25,8 @@ class CreateArrivalsTimeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('arrivals_time');
+        Schema::table('departures_station', function (Blueprint $table) {
+            //
+        });
     }
 }
