@@ -16,6 +16,7 @@ class CreateNumberOfCarriages extends Migration
         Schema::create('number_of_carriages', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->tinyInteger("number_of_carriages");
         });
     }
 

@@ -16,6 +16,7 @@ class CreateIsInTimeTable extends Migration
         Schema::create('is_in_time', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->boolean("is_in_time");
         });
     }
 

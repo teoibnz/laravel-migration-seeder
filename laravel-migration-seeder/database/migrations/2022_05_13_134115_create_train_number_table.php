@@ -16,6 +16,7 @@ class CreateTrainNumberTable extends Migration
         Schema::create('train_number', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->smallInteger("train_code");
         });
     }
 

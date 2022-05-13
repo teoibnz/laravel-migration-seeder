@@ -16,6 +16,8 @@ class CreateArrivalsTimeTable extends Migration
         Schema::create('arrivals_time', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date("arrivals_time");
+
         });
     }
 

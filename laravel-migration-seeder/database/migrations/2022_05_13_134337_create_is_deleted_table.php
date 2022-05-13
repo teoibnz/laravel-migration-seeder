@@ -16,6 +16,7 @@ class CreateIsDeletedTable extends Migration
         Schema::create('is_deleted', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->boolean("is_deleted");
         });
     }
 
