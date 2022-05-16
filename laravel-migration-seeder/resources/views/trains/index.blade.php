@@ -1,7 +1,7 @@
 @extends("layouts.main")
 
 @section("main-content")
-<table class="table p-3">
+<table class="table">
     <thead>
         <tr>
         <th scope="col">Company Name</th>
