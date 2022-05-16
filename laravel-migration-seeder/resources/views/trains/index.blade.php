@@ -4,8 +4,9 @@
 <table class="table">
     <thead>
         <tr>
+        <th scope="row">id</th>
         <th scope="col">Company Name</th>
-        <th scope="col">Departure Fromn</th>
+        <th scope="col">Departure From</th>
         <th scope="col">Arrive In</th>
         <th scope="col">Departure at </th>
         <th scope="col">Arrive at </th>
@@ -21,7 +22,11 @@
         @foreach($trains as $train)
         <tr>
             <th scope="row">{{ $train->id }} </th>
-            <td> {{$train->company_name}} </td>
+            <td>
+                <a href='{{route("trains.show", $train->id)}}'>
+                    {{$train->company_name}}
+                </a>  
+            </td>
             <td>{{$train->departures_station}}</td>
             <td>{{$train->arrivals_station}}</td>
             <td>{{$train->departures_time}}</td>
